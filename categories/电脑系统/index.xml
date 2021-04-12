@@ -11,10 +11,10 @@
     <lastBuildDate>Mon, 12 Apr 2021 08:15:30 +0000</lastBuildDate><atom:link href="/categories/%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用脚本安装archlinux教程</title>
-      <link>/posts/28.html</link>
+      <link>/posts/29.html</link>
       <pubDate>Mon, 12 Apr 2021 08:15:30 +0000</pubDate>
       
-      <guid>/posts/28.html</guid>
+      <guid>/posts/29.html</guid>
       <description>脚本地址 https://gitee.com/ch0769/ArchInstall
 下载最新版的archlinux镜像，通过虚拟机安装，设置GPT格式
 设置root的密码 passwd
