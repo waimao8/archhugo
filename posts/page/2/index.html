@@ -70,48 +70,54 @@
     "itemListElement":[{
             "@type":"ListItem",
             "position":  1 ,
+            "name": "N1安装omv后安装docker+transmission+lnmp搭建网站",
+            "description": "\u003cp\u003eN1安装好omv后，\n进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。\n进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）\u003c/p\u003e",
+            "url": "/posts/8.html"
+        },{
+            "@type":"ListItem",
+            "position":  2 ,
             "name": "斐讯N1安Armbian安装OMV安装nginx+mysql安装typecho全过程",
             "description": "\u003ch1 id=\"安装armbian\"\u003e安装armbian\u003c/h1\u003e\n\u003cp\u003e测试了很多版本的Armbian+omv，OMV经常会报错，改用了XQ7的N1首个支持FullCone Nat的Armbian系统，非常好用\n下面是链接\n\u003ca href=\"https://www.right.com.cn/forum/thread-788004-1-1.html\"\u003ehttps://www.right.com.cn/forum/thread-788004-1-1.html\u003c/a\u003e\u003c/p\u003e",
             "url": "/posts/7.html"
         },{
             "@type":"ListItem",
-            "position":  2 ,
+            "position":  3 ,
             "name": "斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座",
             "description": "\u003cp\u003e斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座\u003c/p\u003e\n\u003cp\u003e默认代码\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003edocker run -d --restart=always --name=\u0026quot;home-assistant\u0026quot; -e TZ=Asia/Shanghai -v /var/lib/docker/homeassistant:/config -p 8123:8123 -v /etc/localtime:/etc/localtime:ro --net=host homeassistant/aarch64-homeassistant:latest\r\n\r\n\u003c/code\u003e\u003c/pre\u003e",
             "url": "/posts/6.html"
         },{
             "@type":"ListItem",
-            "position":  3 ,
+            "position":  4 ,
             "name": "Github 绑定域名添加https的方法2019年9月更新",
             "description": "\u003cp\u003e官方教程\u003cbr\u003e\n\u003ca href=\"https://help.github.com/en/articles/using-a-custom-domain-with-github-pages\"\u003ehttps://help.github.com/en/articles/using-a-custom-domain-with-github-pages\u003c/a\u003e\u003cbr\u003e\n打开 \u003ca href=\"https://github.com/\"\u003ehttps://github.com/\u003c/a\u003e\u003cbr\u003e\n打开 \u003ca href=\"https://github.com/waimao8/waimao8.github.io/settings\"\u003ehttps://github.com/waimao8/waimao8.github.io/settings\u003c/a\u003e\u003cbr\u003e\n绑定域名：163168.xyz\u003c/p\u003e",
             "url": "/posts/5.html"
         },{
             "@type":"ListItem",
-            "position":  4 ,
+            "position":  5 ,
             "name": "hexo博客优化之文章置顶+置顶标签",
             "description": "\u003cp\u003e\u003ca href=\"https://github.com/netcan/hexo-generator-index-pin-top\"\u003e支持置顶的仓库\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e可以直接用以下命令安装\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e$ npm uninstall hexo-generator-index --save\r\n$ npm install hexo-generator-index-pin-top --save\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e然后在需要置顶的文章的Front-matter中加上top: true即可。\u003c/p\u003e",
             "url": "/posts/4.html"
         },{
             "@type":"ListItem",
-            "position":  5 ,
+            "position":  6 ,
             "name": "chrome安装Tampermonkey，添加插件的过程",
             "description": "\u003cp\u003echrome安装Tampermonkey，添加插件的过程\u003c/p\u003e\n\u003ch1 id=\"安装谷歌访问助手\"\u003e安装谷歌访问助手\u003c/h1\u003e\n\u003cp\u003e打开google搜索和https://play.google.com/  的正确方式\n下载谷歌访问助手\n\u003ca href=\"https://github.com/haotian-wang/google-access-helper\"\u003ehttps://github.com/haotian-wang/google-access-helper\u003c/a\u003e\n解压文件后\n将谷歌访问助手_v2.3.0.crx 重命名为谷歌访问助手_v2.3.0.zip\u003c/p\u003e",
             "url": "/posts/13.html"
         },{
             "@type":"ListItem",
-            "position":  6 ,
+            "position":  7 ,
             "name": "hexo博客备份迁移教程",
             "description": "\u003ch1 id=\"hexo备份\"\u003ehexo备份\u003c/h1\u003e\n\u003ch2 id=\"新建repository\"\u003e新建repository\u003c/h2\u003e\n\u003cp\u003e在Github下创建一个新的repository，取名为myblog。(与本地的Hexo源码文件夹同名即可)\n创建的时候最好为空，不要勾选创建README.md。\u003c/p\u003e",
             "url": "/posts/3.html"
         },{
             "@type":"ListItem",
-            "position":  7 ,
+            "position":  8 ,
             "name": "github搭建hexo博客和绑定域名的详细过程",
             "description": "\u003ch2 id=\"1httpsgithubcom-先注册账号-比如我的是-waimao8\"\u003e\u003ca href=\"\"\u003e\u003c/a\u003e1、https://github.com/ 先注册账号 比如我的是 waimao8\u003c/h2\u003e\n\u003ch2 id=\"2new-repository-waimao8githubio\"\u003e\u003ca href=\"\"\u003e\u003c/a\u003e2、New repository waimao8.github.io\u003c/h2\u003e\n\u003ch2 id=\"3下载git-httpsgit-scmcomdownloads-默认安装-安装好后用git---version-来查看一下版本\"\u003e\u003ca href=\"\"\u003e\u003c/a\u003e3、下载git \u003ca href=\"https://git-scm.com/downloads\"\u003ehttps://git-scm.com/downloads\u003c/a\u003e 默认安装 安装好后，用git \u0026ndash;version 来查看一下版本\u003c/h2\u003e\n\u003ch2 id=\"4下载-httpsnodejsorgendownload-选lts-默认安装-安装完后打开命令行\"\u003e\u003ca href=\"\"\u003e\u003c/a\u003e4、下载 \u003ca href=\"https://nodejs.org/en/download/\"\u003ehttps://nodejs.org/en/download/\u003c/a\u003e 选LTS 默认安装 ，安装完后，打开命令行\u003c/h2\u003e",
             "url": "/posts/2.html"
         },{
             "@type":"ListItem",
-            "position":  8 ,
+            "position":  9 ,
             "name": "hexo安装后的使用教程",
             "description": "\u003cp\u003e​\u003c/p\u003e\n\u003ch1 id=\"安装主题next\"\u003e安装主题（next）\u003c/h1\u003e\n\u003cp\u003egit clone \u003ca href=\"https://github.com/theme-next/hexo-theme-next\"\u003ehttps://github.com/theme-next/hexo-theme-next\u003c/a\u003e themes/next\u003c/p\u003e\n\u003cp\u003e下载主题解压后放到themes目录\u003cbr\u003e\n编辑主目录的_config.yml 查找language 设置 language: zh-CN\u003c/p\u003e",
             "url": "/posts/1.html"
@@ -149,7 +155,7 @@
 
 
 
-<meta property="og:updated_time" content="2021-02-16T15:30:08&#43;00:00" />
+<meta property="og:updated_time" content="2021-04-12T08:15:30&#43;00:00" />
 
 
 
@@ -234,6 +240,46 @@
 </article>
 <div class="bg-secondary-bg rounded px-6">
     <div class="overflow-hidden divide-y">
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
+  <a href="/posts/8.html" class="font-bold text-xl hover:text-eureka">N1安装omv后安装docker&#43;transmission&#43;lnmp搭建网站</a>
+</div>
+<div class="content">
+  N1安装好omv后， 进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。 进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）
+
+</div>
+
+<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2019-12-08</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟阅读时长</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/%E6%96%90%E8%AE%AFn1/" class="hover:text-eureka">斐讯N1</a>
+        
+    </div>
+    
+
+    
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
   
   <div class="py-6">
     <div class="flex flex-col-reverse lg:flex-row justify-between">
