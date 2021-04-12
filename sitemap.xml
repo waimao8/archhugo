@@ -2,28 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/tags/github/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/categories/github/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/categories/hugo/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/posts/30.htm</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
+    <loc>/categories/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2021-04-12T08:18:30+00:00</lastmod>
+  </url><url>
     <loc>/tags/archlinux/</loc>
     <lastmod>2021-04-12T08:15:30+00:00</lastmod>
   </url><url>
     <loc>/categories/archlinux/</loc>
     <lastmod>2021-04-12T08:15:30+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-04-12T08:15:30+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-04-12T08:15:30+00:00</lastmod>
-  </url><url>
     <loc>/tags/linux/</loc>
     <lastmod>2021-04-12T08:15:30+00:00</lastmod>
   </url><url>
     <loc>/categories/linux/</loc>
-    <lastmod>2021-04-12T08:15:30+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-04-12T08:15:30+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-04-12T08:15:30+00:00</lastmod>
   </url><url>
     <loc>/posts/29.html</loc>
@@ -50,19 +71,7 @@
     <loc>/posts/25.html</loc>
     <lastmod>2021-02-16T15:30:08+00:00</lastmod>
   </url><url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2021-02-15T15:55:32+00:00</lastmod>
-  </url><url>
-    <loc>/categories/hugo/</loc>
-    <lastmod>2021-02-15T15:55:32+00:00</lastmod>
-  </url><url>
     <loc>/posts/26.html</loc>
-    <lastmod>2021-02-15T15:55:32+00:00</lastmod>
-  </url><url>
-    <loc>/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2021-02-15T15:55:32+00:00</lastmod>
-  </url><url>
-    <loc>/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-02-15T15:55:32+00:00</lastmod>
   </url><url>
     <loc>/posts/27.html</loc>
@@ -121,12 +130,6 @@
   </url><url>
     <loc>/categories/%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2020-06-02T15:55:32+00:00</lastmod>
-  </url><url>
-    <loc>/tags/github/</loc>
-    <lastmod>2020-06-01T15:55:32+00:00</lastmod>
-  </url><url>
-    <loc>/categories/github/</loc>
-    <lastmod>2020-06-01T15:55:32+00:00</lastmod>
   </url><url>
     <loc>/posts/22.html</loc>
     <lastmod>2020-06-01T15:55:32+00:00</lastmod>
