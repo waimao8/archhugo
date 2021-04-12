@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on it迷</title>
+    <link>/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Mon, 09 Sep 2019 14:37:42 +0000</lastBuildDate><atom:link href="/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hexo安装后的使用教程</title>
+      <link>/posts/1.html</link>
+      <pubDate>Mon, 09 Sep 2019 14:37:42 +0000</pubDate>
+      
+      <guid>/posts/1.html</guid>
+      <description>&lt;p&gt;​&lt;/p&gt;
+&lt;h1 id=&#34;安装主题next&#34;&gt;安装主题（next）&lt;/h1&gt;
+&lt;p&gt;git clone &lt;a href=&#34;https://github.com/theme-next/hexo-theme-next&#34;&gt;https://github.com/theme-next/hexo-theme-next&lt;/a&gt; themes/next&lt;/p&gt;
+&lt;p&gt;下载主题解压后放到themes目录&lt;br&gt;
+编辑主目录的_config.yml 查找language 设置 language: zh-CN&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

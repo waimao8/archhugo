@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on it迷</title>
+    <link>/tags/mac/</link>
+    <description>Recent content in mac on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Fri, 13 Dec 2019 19:05:32 +0000</lastBuildDate><atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小白电脑安装windows系统，linxu和黑苹果的相关资料</title>
+      <link>/posts/14.html</link>
+      <pubDate>Fri, 13 Dec 2019 19:05:32 +0000</pubDate>
+      
+      <guid>/posts/14.html</guid>
+      <description>&lt;p&gt;电脑安装系统必备
+操作系统下载
+官方系统&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>戴尔笔记本E6430安装黑苹果的全部过程</title>
+      <link>/posts/9.html</link>
+      <pubDate>Sun, 08 Dec 2019 19:21:42 +0000</pubDate>
+      
+      <guid>/posts/9.html</guid>
+      <description>&lt;h1 id=&#34;寻找efi文件&#34;&gt;寻找EFI文件&lt;/h1&gt;
+&lt;p&gt;从黑苹果长期维护机型 EFI 及安装教程整理
+&lt;a href=&#34;https://www.jianshu.com/p/484f07b8c7fd&#34;&gt;https://www.jianshu.com/p/484f07b8c7fd&lt;/a&gt;
+找到  &lt;a href=&#34;https://github.com/kinoute/Hack-Dell-Latitude-E6430&#34;&gt;https://github.com/kinoute/Hack-Dell-Latitude-E6430&lt;/a&gt; 下载EFI文件夹&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

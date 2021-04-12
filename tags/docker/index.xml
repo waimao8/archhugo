@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on it迷</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in docker on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Tue, 02 Jun 2020 15:55:32 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>n1终极玩法Armbian-5.77安装docker宝塔openwrt和HomeAssistant</title>
+      <link>/posts/23.html</link>
+      <pubDate>Tue, 02 Jun 2020 15:55:32 +0000</pubDate>
+      
+      <guid>/posts/23.html</guid>
+      <description>&lt;h1 id=&#34;安装armbian-577&#34;&gt;安装Armbian-5.77&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.right.com.cn/forum/thread-510423-1-1.html&#34;&gt;https://www.right.com.cn/forum/thread-510423-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载armbian-577写入u盘&#34;&gt;下载Armbian-5.77写入U盘&lt;/h2&gt;
+&lt;h2 id=&#34;替换低负载的dtb&#34;&gt;替换低负载的dtb&lt;/h2&gt;
+&lt;p&gt;meson-gxl-s905d-phicomm-n1-xiangsm.dtb&lt;/p&gt;
+&lt;h2 id=&#34;开启bbr&#34;&gt;开启bbr&lt;/h2&gt;
+&lt;p&gt;在/etc/sysctl.conf末尾添加下面两行:&lt;br&gt;
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>N1安装omv后安装docker&#43;transmission&#43;lnmp搭建网站</title>
+      <link>/posts/8.html</link>
+      <pubDate>Sun, 08 Dec 2019 18:31:42 +0000</pubDate>
+      
+      <guid>/posts/8.html</guid>
+      <description>&lt;p&gt;N1安装好omv后，
+进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。
+进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座</title>
+      <link>/posts/6.html</link>
+      <pubDate>Mon, 16 Sep 2019 12:52:42 +0000</pubDate>
+      
+      <guid>/posts/6.html</guid>
+      <description>&lt;p&gt;斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座&lt;/p&gt;
+&lt;p&gt;默认代码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d --restart=always --name=&amp;quot;home-assistant&amp;quot; -e TZ=Asia/Shanghai -v /var/lib/docker/homeassistant:/config -p 8123:8123 -v /etc/localtime:/etc/localtime:ro --net=host homeassistant/aarch64-homeassistant:latest
+
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang='zh' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>hexo博客备份迁移教程 | it迷</title>
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+
+<meta name="description"
+  content="hexo备份
+新建repository
+在Github下创建一个新的repository，取名为myblog。(与本地的Hexo源码文件夹同名即可)
+创建的时候最好为空，不要勾选创建README.md。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"hexo博客备份迁移教程",
+      "item":"/posts/3.html"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/3.html"
+    },
+    "headline": "hexo博客备份迁移教程 | it迷","datePublished": "2019-09-11T13:01:13+00:00",
+    "dateModified": "2019-09-11T13:01:13+00:00",
+    "wordCount":  80 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.png"
+        }
+        },
+    "description": "\u003ch1 id=\u0022hexo备份\u0022\u003ehexo备份\u003c\/h1\u003e\n\u003ch2 id=\u0022新建repository\u0022\u003e新建repository\u003c\/h2\u003e\n\u003cp\u003e在Github下创建一个新的repository，取名为myblog。(与本地的Hexo源码文件夹同名即可)\n创建的时候最好为空，不要勾选创建README.md。\u003c\/p\u003e"
+}
+</script><meta property="og:title" content="hexo博客备份迁移教程 | it迷" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/posts/3.html" />
+
+
+
+
+<meta property="og:description" content="hexo备份
+新建repository
+在Github下创建一个新的repository，取名为myblog。(与本地的Hexo源码文件夹同名即可)
+创建的时候最好为空，不要勾选创建README.md。" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="it迷" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2019-09-11T13:01:13&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2019-09-11T13:01:13&#43;00:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="hexo" />
+
+<meta property="article:tag" content="hexo备份还原" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/2.html" />
+
+<meta property="og:see_also" content="/posts/1.html" />
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">it迷</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">关于我</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">文档</a>
+            <a href="/archive/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">归档</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            switchMode('Auto')
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">hexo博客备份迁移教程</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2019-09-11</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟阅读时长</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/hexo/" class="hover:text-eureka">hexo</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <h1 id="hexo备份">hexo备份</h1>
+<h2 id="新建repository">新建repository</h2>
+<p>在Github下创建一个新的repository，取名为myblog。(与本地的Hexo源码文件夹同名即可)
+创建的时候最好为空，不要勾选创建README.md。</p>
+<h2 id="创建仓库">创建仓库</h2>
+<p>进入本地的Hexo文件夹(D:\hexo\blog\myblog)，在这个地方使用git Bash here执行以下命令创建仓库</p>
+<h2 id="创建gitignore文件">创建.gitignore文件</h2>
+<pre><code>touch .gitignore
+</code></pre>
+<p>参考我的 .gitignore：（下面的文件不备份）
+.DS_Store
+Thumbs.db
+db.json
+<em>.log
+node_modules/
+public/
+.deploy</em>/</p>
+<h2 id="提交hexo源码">提交Hexo源码</h2>
+<p>git add .
+git commit -m &ldquo;添加hexo源码文件作为备份&rdquo;</p>
+<h2 id="删除远程库">删除远程库</h2>
+<p>git remote rm origin</p>
+<h2 id="添加远程-git-仓库">添加远程 Git 仓库</h2>
+<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:waimao8/myblog.git</p>
+<h2 id="远程仓库合并到本地">远程仓库合并到本地</h2>
+<p>git pull &ndash;rebase origin master</p>
+<h2 id="更新远程仓库">更新远程仓库</h2>
+<p>git push -u origin master</p>
+<h1 id="hexo备份还原">hexo备份还原</h1>
+<p>在任何一台电脑上，只需要git remote add origin <a href="mailto:git@github.com">git@github.com</a>:waimao8/myblog.git,即可完成将Hexo源文件复制到本地</p>
+<p>在本地编写完博客时，顺次执行实现三步骤，即可完成Hexo博客源文件更新同步</p>
+<h2 id="提交hexo源码-1">提交Hexo源码</h2>
+<p>git add .
+git commit -m &ldquo;添加hexo源码文件作为备份&rdquo;</p>
+<h2 id="远程仓库合并到本地-1">远程仓库合并到本地</h2>
+<p>git pull &ndash;rebase origin master</p>
+<h2 id="更新远程仓库-1">更新远程仓库</h2>
+<p>git push -u origin master</p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/hexo/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#hexo</a>
+    
+    <a href="/tags/hexo%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#hexo备份还原</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一页</span>
+        <a href="/posts/13.html" class="block">chrome安装Tampermonkey，添加插件的过程</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一页</span>
+        <a href="/posts/2.html" class="block">github搭建hexo博客和绑定域名的详细过程</a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">本页内容</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#新建repository">新建repository</a></li>
+    <li><a href="#创建仓库">创建仓库</a></li>
+    <li><a href="#创建gitignore文件">创建.gitignore文件</a></li>
+    <li><a href="#提交hexo源码">提交Hexo源码</a></li>
+    <li><a href="#删除远程库">删除远程库</a></li>
+    <li><a href="#添加远程-git-仓库">添加远程 Git 仓库</a></li>
+    <li><a href="#远程仓库合并到本地">远程仓库合并到本地</a></li>
+    <li><a href="#更新远程仓库">更新远程仓库</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#提交hexo源码-1">提交Hexo源码</a></li>
+    <li><a href="#远程仓库合并到本地-1">远程仓库合并到本地</a></li>
+    <li><a href="#更新远程仓库-1">更新远程仓库</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">相关</h2>
+        <div class="content">
+            
+            <a href="/posts/2.html">github搭建hexo博客和绑定域名的详细过程</a>
+            <br />
+            
+            <a href="/posts/1.html">hexo安装后的使用教程</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

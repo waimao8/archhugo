@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang='zh' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>斐讯N1安Armbian安装OMV安装nginx&#43;mysql安装typecho全过程 | it迷</title>
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+
+<meta name="description"
+  content="安装armbian
+测试了很多版本的Armbian&#43;omv，OMV经常会报错，改用了XQ7的N1首个支持FullCone Nat的Armbian系统，非常好用
+下面是链接
+https://www.right.com.cn/forum/thread-788004-1-1.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"斐讯N1安Armbian安装OMV安装nginx+mysql安装typecho全过程",
+      "item":"/posts/7.html"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/7.html"
+    },
+    "headline": "斐讯N1安Armbian安装OMV安装nginx\u002bmysql安装typecho全过程 | it迷","datePublished": "2019-12-08T18:28:42+00:00",
+    "dateModified": "2019-12-08T18:28:42+00:00",
+    "wordCount":  261 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.png"
+        }
+        },
+    "description": "\u003ch1 id=\u0022安装armbian\u0022\u003e安装armbian\u003c\/h1\u003e\n\u003cp\u003e测试了很多版本的Armbian\u002bomv，OMV经常会报错，改用了XQ7的N1首个支持FullCone Nat的Armbian系统，非常好用\n下面是链接\n\u003ca href=\u0022https:\/\/www.right.com.cn\/forum\/thread-788004-1-1.html\u0022\u003ehttps:\/\/www.right.com.cn\/forum\/thread-788004-1-1.html\u003c\/a\u003e\u003c\/p\u003e"
+}
+</script><meta property="og:title" content="斐讯N1安Armbian安装OMV安装nginx&#43;mysql安装typecho全过程 | it迷" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/posts/7.html" />
+
+
+
+
+<meta property="og:description" content="安装armbian
+测试了很多版本的Armbian&#43;omv，OMV经常会报错，改用了XQ7的N1首个支持FullCone Nat的Armbian系统，非常好用
+下面是链接
+https://www.right.com.cn/forum/thread-788004-1-1.html" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="it迷" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2019-12-08T18:28:42&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2019-12-08T18:28:42&#43;00:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="斐讯N1" />
+
+<meta property="article:tag" content="omv" />
+
+<meta property="article:tag" content="typecho" />
+
+<meta property="article:tag" content="lnmp" />
+
+<meta property="article:tag" content="mysql" />
+
+<meta property="article:tag" content="nginx" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/6.html" />
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">it迷</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">关于我</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">文档</a>
+            <a href="/archive/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">归档</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            switchMode('Auto')
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">斐讯N1安Armbian安装OMV安装nginx&#43;mysql安装typecho全过程</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2019-12-08</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>2分钟阅读时长</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/%E6%96%90%E8%AE%AFn1/" class="hover:text-eureka">斐讯N1</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/omv/" class="hover:text-eureka">omv</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/typecho/" class="hover:text-eureka">typecho</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/lnmp/" class="hover:text-eureka">lnmp</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/mysql/" class="hover:text-eureka">mysql</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/nginx/" class="hover:text-eureka">nginx</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <h1 id="安装armbian">安装armbian</h1>
+<p>测试了很多版本的Armbian+omv，OMV经常会报错，改用了XQ7的N1首个支持FullCone Nat的Armbian系统，非常好用
+下面是链接
+<a href="https://www.right.com.cn/forum/thread-788004-1-1.html">https://www.right.com.cn/forum/thread-788004-1-1.html</a></p>
+<p>ROM下载地址：链接：https://share.weiyun.com/5IsYMcO 密码：fop0i5
+需要说明的是img制作成U盘后，不需要替换dtb，不需要更换内核，直接使用就可以，一步到位。</p>
+<p>先把镜像写入U盘，从U盘启动后，从路由器找到N1的ip地址
+通过Xshell登陆 输入N1的ip 账号root 密码1234
+第一次进入需要修改密码
+再写入N1的内置存储，用下面的命令就可以了
+/boot/create-mbr-linux.sh
+/root/install.sh
+写入完成后，断电，拔U盘，插电重启</p>
+<p>切换中国时间
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &amp;&amp; echo &ldquo;Asia/Shanghai&rdquo; &gt; /etc/timezone</p>
+<p>运行
+nano /etc/apt/sources.list
+修改源为国内源
+deb <a href="http://mirrors.tuna.tsinghua.edu.cn/debian">http://mirrors.tuna.tsinghua.edu.cn/debian</a> stretch main contrib non-free
+deb <a href="http://mirrors.tuna.tsinghua.edu.cn/debian">http://mirrors.tuna.tsinghua.edu.cn/debian</a> stretch-updates main contrib non-free
+deb <a href="http://mirrors.tuna.tsinghua.edu.cn/debian-security">http://mirrors.tuna.tsinghua.edu.cn/debian-security</a> stretch/updates main contrib non-free
+deb <a href="http://mirrors.tuna.tsinghua.edu.cn/debian">http://mirrors.tuna.tsinghua.edu.cn/debian</a> stretch-backports main</p>
+<p>或者</p>
+<p>deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stretch main contrib non-free
+deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stretch-updates main contrib non-free
+deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stretch-backports main contrib non-free
+deb <a href="http://mirrors.ustc.edu.cn/debian-security/">http://mirrors.ustc.edu.cn/debian-security/</a> stretch/updates main contrib non-free</p>
+<p>保存后，更新源
+执行 apt-get update 命令即可更新源
+执行 apt-get upgrade 更新软件</p>
+<h2 id="做一个补充切换国内源后安装omv和插件有一定概率会出问题官方的也是一样最稳的做法是外国ip官方源稳定速度又快">做一个补充，切换国内源后安装omv和插件有一定概率会出问题，官方的也是一样，最稳的做法是，外国ip，官方源，稳定，速度又快。</h2>
+<h1 id="安装omv">安装omv</h1>
+<p>armbian-config</p>
+<p>选择Software，回车确认 接着选择Softy，回车确认 最后选择OMV，空格勾选，回车确认开始安装</p>
+<p>然后，按tab键，选择OK，回车确认 最后等OMV程序自动安装完成</p>
+<p>依次选择Exit、Cancel，返回命令行
+至此OMV安装完毕，正常的话，浏览器输入N1 ip或http://aml/ ,会看到OpenMediaVault登陆界面</p>
+<p>此时使用默认用户名：admin 默认密码：openmediavault ，登陆即可</p>
+<p>OMV安装OMVEXTRAS
+官方教程  <a href="https://www.openmediavault.cn/read-omvextrasorg.html">https://www.openmediavault.cn/read-omvextrasorg.html</a>
+安装好后，按下图设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112165303.png" alt=""></p>
+<h1 id="安装typecho">安装Typecho</h1>
+<h2 id="在文件管理找到自己的usb设备我的是移动2t的移动硬盘选择挂载">在文件管理，找到自己的usb设备，我的是移动2T的移动硬盘，选择挂载。</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112170829.png" alt=""></p>
+<p>用winscp软件，到2t下面建www文件夹，在www下面建typecho文件夹，在typecho下面建public_html 文件夹  都设置777权限，如下图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112170108.png" alt="">
+<img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112170222.png" alt=""></p>
+<h2 id="安装nginx和mysql">安装nginx和mysql</h2>
+<p>在插件找插件，点安装就可以的，先安装nginx，再安装mysql，安装好后入下图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112171153.png" alt=""></p>
+<h3 id="设置nginx-点击pools添加typecho">设置nginx 点击pools，添加typecho</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112171656.png" alt="">
+点击服务器，添加后保存
+<img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112171847.png" alt="">
+应用更改后再设置，选择typecho目录，选择公共目录，选择public_html，启用php，php-fpm-pool选择刚刚建立的typecho</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112172404.png" alt=""></p>
+<p>Index下面的三个选项都打开</p>
+<p>这里先打乱一些顺序，我发现安装好typecho后，只能打开前台，文件页面和管理后台都出现404，下面就是解决方法
+下面有个扩展选项，填入下面代码</p>
+<p>if (-f $request_filename/index.html){
+rewrite (.<em>) $1/index.html break;
+}
+if (-f $request_filename/index.php){
+rewrite (.</em>) $1/index.php;
+}
+if (!-f $request_filename){
+rewrite (.*) /index.php;
+}</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112173220.png" alt=""></p>
+<p>也可以直接在配置 /etc/nginx/sites-available/zzz-omv-nginx 最后面加上面的代码
+就可以了</p>
+<p>最后在General点击启用，nginx 就配置好了
+下面配置数据库</p>
+<h3 id="omv安装数据库">omv安装数据库</h3>
+<p><a href="https://www.openmediavault.cn/read-omv-install-mysql.html">https://www.openmediavault.cn/read-omv-install-mysql.html</a></p>
+<p>打开mysql，重设密码。绑定ip改成n1的ip</p>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112174209.png" alt=""></p>
+<p>点击show
+用户ID：omvadmin
+密码：刚修改过的
+登陆后，创建数据库
+<img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112174527.png" alt="">
+官方下载 <a href="http://typecho.org/">http://typecho.org/</a><br>
+解压后，将文件上传到前面建立都public_html文件夹，就可以安装了。</p>
+<h3 id="mysql自动启动">mysql自动启动</h3>
+<p>安装配置完nginx和mysql后默认mysql是不能自启动的。所以还要配置数据库自启动。用winscp连接OMV系统【默认用户名root密码openmediavault】。连接后打开etc-找到rc.loal,右键点编辑，在exit 0上一行添加service mysqld start保存退出。就可以了</p>
+<h3 id="备份数据库和还原数据库">备份数据库和还原数据库</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/waimao8/image@master/20200112182628.png" alt=""></p>
+<h1 id="顺便推荐一个非常漂亮的主题">顺便推荐一个非常漂亮的主题</h1>
+<p><a href="https://zhebk.cn/Web/Akina.html">https://zhebk.cn/Web/Akina.html</a></p>
+<h1 id="下面是相关命令和教程">下面是相关命令和教程</h1>
+<p>omv-firstaid
+First aid 界面翻译</p>
+<p>configure network interface 配置网络界面</p>
+<p>configure web control panel 配置Web控制面板</p>
+<p>change control panel administrator password 更改控制面板管理员密码</p>
+<p>restore failed login attempt counter 恢复失败登录尝试计数器</p>
+<p>restore configuration backup 恢复配置备份</p>
+<p>check configuration status file 检查配置状态文件</p>
+<p>check RRD database 检查RRD数据库</p>
+<p>clear local upload package repository 清除本地上传包存储库</p>
+<p>clean apt 清除apt</p>
+<p>clear web control panel cache 清除Web控制面板缓存</p>
+<p>submit diagnostic report to administrator 向管理员提交诊断
+卸载相关
+apt-get remove 会删除软件包而保留软件的配置文件
+apt-get purge 会同时清除软件包和软件的配置文件
+卸载openmediavault命令
+apt-get purge openmediavault</p>
+<p>armbian-config可视化操作里面有许多快捷的系统设置，
+比如说基本的时间设置、网络设置，Wi-Fi设置，设置热点、安装桌面和远程、安装热门的第三方软件（诸如nginx Nextcloud、Plex、OpenMediaVault、Pi-hole、Transmission、Docker等热门软件）
+下面收集了一些omv的相关教程，可以参考
+omv使用</p>
+<p>OMV安装NextCloud
+<a href="https://www.openmediavault.cn/read-omv-an-zhuang-nextcloud.html">https://www.openmediavault.cn/read-omv-an-zhuang-nextcloud.html</a></p>
+<p>phicomm N1 armbian环境下安装功能丰富的开源NAS系统 OpenMediaVault
+<a href="https://www.right.com.cn/forum/thread-342164-1-1.html">https://www.right.com.cn/forum/thread-342164-1-1.html</a></p>
+<p>N1 OpenMediaVault 使用DLNA+VLC多媒体应用的小白教程
+<a href="https://www.right.com.cn/forum/thread-342841-1-1.html">https://www.right.com.cn/forum/thread-342841-1-1.html</a></p>
+<p>OpenMediaVault(OMV)配置Docker
+<a href="https://www.jianshu.com/p/5b0eacc61527">https://www.jianshu.com/p/5b0eacc61527</a></p>
+<p>OMV安装可道云(kodexplorer)
+<a href="https://www.jianshu.com/p/4731a1ef01d1">https://www.jianshu.com/p/4731a1ef01d1</a></p>
+<p>OMV安装web服务器详细教程
+<a href="https://jingyan.baidu.com/article/0aa223757304e688cd0d6464.html">https://jingyan.baidu.com/article/0aa223757304e688cd0d6464.html</a></p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/%E6%96%90%E8%AE%AFn1/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#斐讯N1</a>
+    
+    <a href="/tags/omv/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#omv</a>
+    
+    <a href="/tags/typecho/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#typecho</a>
+    
+    <a href="/tags/lnmp/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#lnmp</a>
+    
+    <a href="/tags/mysql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#mysql</a>
+    
+    <a href="/tags/nginx/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#nginx</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一页</span>
+        <a href="/posts/8.html" class="block">N1安装omv后安装docker&#43;transmission&#43;lnmp搭建网站</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一页</span>
+        <a href="/posts/6.html" class="block">斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座</a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">本页内容</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#做一个补充切换国内源后安装omv和插件有一定概率会出问题官方的也是一样最稳的做法是外国ip官方源稳定速度又快">做一个补充，切换国内源后安装omv和插件有一定概率会出问题，官方的也是一样，最稳的做法是，外国ip，官方源，稳定，速度又快。</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#在文件管理找到自己的usb设备我的是移动2t的移动硬盘选择挂载">在文件管理，找到自己的usb设备，我的是移动2T的移动硬盘，选择挂载。</a></li>
+    <li><a href="#安装nginx和mysql">安装nginx和mysql</a>
+      <ul>
+        <li><a href="#设置nginx-点击pools添加typecho">设置nginx 点击pools，添加typecho</a></li>
+        <li><a href="#omv安装数据库">omv安装数据库</a></li>
+        <li><a href="#mysql自动启动">mysql自动启动</a></li>
+        <li><a href="#备份数据库和还原数据库">备份数据库和还原数据库</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">相关</h2>
+        <div class="content">
+            
+            <a href="/posts/6.html">斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

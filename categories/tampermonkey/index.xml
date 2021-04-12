@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tampermonkey on it迷</title>
+    <link>/categories/tampermonkey/</link>
+    <description>Recent content in Tampermonkey on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Thu, 12 Sep 2019 13:01:13 +0000</lastBuildDate><atom:link href="/categories/tampermonkey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chrome安装Tampermonkey，添加插件的过程</title>
+      <link>/posts/13.html</link>
+      <pubDate>Thu, 12 Sep 2019 13:01:13 +0000</pubDate>
+      
+      <guid>/posts/13.html</guid>
+      <description>&lt;p&gt;chrome安装Tampermonkey，添加插件的过程&lt;/p&gt;
+&lt;h1 id=&#34;安装谷歌访问助手&#34;&gt;安装谷歌访问助手&lt;/h1&gt;
+&lt;p&gt;打开google搜索和https://play.google.com/  的正确方式
+下载谷歌访问助手
+&lt;a href=&#34;https://github.com/haotian-wang/google-access-helper&#34;&gt;https://github.com/haotian-wang/google-access-helper&lt;/a&gt;
+解压文件后
+将谷歌访问助手_v2.3.0.crx 重命名为谷歌访问助手_v2.3.0.zip&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

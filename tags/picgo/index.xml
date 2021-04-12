@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PicGo on it迷</title>
+    <link>/tags/picgo/</link>
+    <description>Recent content in PicGo on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Fri, 13 Dec 2019 12:33:32 +0000</lastBuildDate><atom:link href="/tags/picgo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图床搭建的最佳选择 PicGo &#43; Github &#43; Jsdelivr免费公用CDN加速.</title>
+      <link>/posts/12.html</link>
+      <pubDate>Fri, 13 Dec 2019 12:33:32 +0000</pubDate>
+      
+      <guid>/posts/12.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;图床搭建的最佳选择 PicGo + Github + Jsdelivr免费公用CDN加速&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;github创建仓库&#34;&gt;Github创建仓库&lt;/h1&gt;
+&lt;h2 id=&#34;点击-new-repository&#34;&gt;点击 New repository&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

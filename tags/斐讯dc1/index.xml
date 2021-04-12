@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>斐讯DC1 on it迷</title>
+    <link>/tags/%E6%96%90%E8%AE%AFdc1/</link>
+    <description>Recent content in 斐讯DC1 on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Mon, 16 Sep 2019 12:52:42 +0000</lastBuildDate><atom:link href="/tags/%E6%96%90%E8%AE%AFdc1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座</title>
+      <link>/posts/6.html</link>
+      <pubDate>Mon, 16 Sep 2019 12:52:42 +0000</pubDate>
+      
+      <guid>/posts/6.html</guid>
+      <description>&lt;p&gt;斐讯N1 docker安装homeassistant  配置斐讯dc1智能插座&lt;/p&gt;
+&lt;p&gt;默认代码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d --restart=always --name=&amp;quot;home-assistant&amp;quot; -e TZ=Asia/Shanghai -v /var/lib/docker/homeassistant:/config -p 8123:8123 -v /etc/localtime:/etc/localtime:ro --net=host homeassistant/aarch64-homeassistant:latest
+
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

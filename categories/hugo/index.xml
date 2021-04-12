@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on it迷</title>
+    <link>/categories/hugo/</link>
+    <description>Recent content in hugo on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Mon, 15 Feb 2021 15:55:32 +0000</lastBuildDate><atom:link href="/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ubuntu安装hugo教程</title>
+      <link>/posts/26.html</link>
+      <pubDate>Mon, 15 Feb 2021 15:55:32 +0000</pubDate>
+      
+      <guid>/posts/26.html</guid>
+      <description>&lt;h2 id=&#34;ubuntu安装hugo&#34;&gt;ubuntu安装hugo&lt;/h2&gt;
+&lt;h3 id=&#34;安装git&#34;&gt;安装git&lt;/h3&gt;
+&lt;p&gt;官网 &lt;a href=&#34;https://git-scm.com/download/linux&#34;&gt;https://git-scm.com/download/linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sudo apt-get install git&lt;/p&gt;
+&lt;h3 id=&#34;安装go&#34;&gt;安装go&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/&#34;&gt;https://golang.org/dl/&lt;/a&gt;     （有可能被墙）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugo搭建和使用教程</title>
+      <link>/posts/22.html</link>
+      <pubDate>Mon, 01 Jun 2020 15:55:32 +0000</pubDate>
+      
+      <guid>/posts/22.html</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;做博客就图个稳定，一次性买了10年的域名，搭配免费的github，适合做长期博客。&lt;br&gt;
+之前安装的hexo，可玩性非常强，前面文章有写一些关于hexo的安装使用教程，用了一年多，也发现了一些问题，hexo版本更新各种不兼容，访问速度慢，，很影响心情，自己都懒得搭理博客了，国内cdn加速需要备案，只是做个小站，不想太麻烦。&lt;br&gt;
+所幸，无意中发现荒野无灯大神把站转移到hugo，访问速度非常快，于是自己马上搭建了一个，打开文章页面基本上是秒开，之前hexo打开文章大约要5-6秒，用不同设备，不同网络测试很多次，hugo博客的访问速度要快4倍以上。并且文章越多，hugo的优势就越明显，为避免以后迁移麻烦，所以赶紧把博客迁到了hugo。主题也是我喜欢的，非常简洁。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

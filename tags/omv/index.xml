@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>omv on it迷</title>
+    <link>/tags/omv/</link>
+    <description>Recent content in omv on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Sun, 08 Dec 2019 18:31:42 +0000</lastBuildDate><atom:link href="/tags/omv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>N1安装omv后安装docker&#43;transmission&#43;lnmp搭建网站</title>
+      <link>/posts/8.html</link>
+      <pubDate>Sun, 08 Dec 2019 18:31:42 +0000</pubDate>
+      
+      <guid>/posts/8.html</guid>
+      <description>&lt;p&gt;N1安装好omv后，
+进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。
+进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>斐讯N1安Armbian安装OMV安装nginx&#43;mysql安装typecho全过程</title>
+      <link>/posts/7.html</link>
+      <pubDate>Sun, 08 Dec 2019 18:28:42 +0000</pubDate>
+      
+      <guid>/posts/7.html</guid>
+      <description>&lt;h1 id=&#34;安装armbian&#34;&gt;安装armbian&lt;/h1&gt;
+&lt;p&gt;测试了很多版本的Armbian+omv，OMV经常会报错，改用了XQ7的N1首个支持FullCone Nat的Armbian系统，非常好用
+下面是链接
+&lt;a href=&#34;https://www.right.com.cn/forum/thread-788004-1-1.html&#34;&gt;https://www.right.com.cn/forum/thread-788004-1-1.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

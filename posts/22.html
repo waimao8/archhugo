@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang='zh' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>hugo搭建和使用教程 | it迷</title>
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+
+<meta name="description"
+  content="前言
+做博客就图个稳定，一次性买了10年的域名，搭配免费的github，适合做长期博客。
+之前安装的hexo，可玩性非常强，前面文章有写一些关于hexo的安装使用教程，用了一年多，也发现了一些问题，hexo版本更新各种不兼容，访问速度慢，，很影响心情，自己都懒得搭理博客了，国内cdn加速需要备案，只是做个小站，不想太麻烦。
+所幸，无意中发现荒野无灯大神把站转移到hugo，访问速度非常快，于是自己马上搭建了一个，打开文章页面基本上是秒开，之前hexo打开文章大约要5-6秒，用不同设备，不同网络测试很多次，hugo博客的访问速度要快4倍以上。并且文章越多，hugo的优势就越明显，为避免以后迁移麻烦，所以赶紧把博客迁到了hugo。主题也是我喜欢的，非常简洁。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"hugo搭建和使用教程",
+      "item":"/posts/22.html"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/22.html"
+    },
+    "headline": "hugo搭建和使用教程 | it迷","datePublished": "2020-06-01T15:55:32+00:00",
+    "dateModified": "2020-06-01T15:55:32+00:00",
+    "wordCount":  198 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.png"
+        }
+        },
+    "description": "\u003ch1 id=\u0022前言\u0022\u003e前言\u003c\/h1\u003e\n\u003cp\u003e做博客就图个稳定，一次性买了10年的域名，搭配免费的github，适合做长期博客。\u003cbr\u003e\n之前安装的hexo，可玩性非常强，前面文章有写一些关于hexo的安装使用教程，用了一年多，也发现了一些问题，hexo版本更新各种不兼容，访问速度慢，，很影响心情，自己都懒得搭理博客了，国内cdn加速需要备案，只是做个小站，不想太麻烦。\u003cbr\u003e\n所幸，无意中发现荒野无灯大神把站转移到hugo，访问速度非常快，于是自己马上搭建了一个，打开文章页面基本上是秒开，之前hexo打开文章大约要5-6秒，用不同设备，不同网络测试很多次，hugo博客的访问速度要快4倍以上。并且文章越多，hugo的优势就越明显，为避免以后迁移麻烦，所以赶紧把博客迁到了hugo。主题也是我喜欢的，非常简洁。\u003c\/p\u003e"
+}
+</script><meta property="og:title" content="hugo搭建和使用教程 | it迷" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/posts/22.html" />
+
+
+
+
+<meta property="og:description" content="前言
+做博客就图个稳定，一次性买了10年的域名，搭配免费的github，适合做长期博客。
+之前安装的hexo，可玩性非常强，前面文章有写一些关于hexo的安装使用教程，用了一年多，也发现了一些问题，hexo版本更新各种不兼容，访问速度慢，，很影响心情，自己都懒得搭理博客了，国内cdn加速需要备案，只是做个小站，不想太麻烦。
+所幸，无意中发现荒野无灯大神把站转移到hugo，访问速度非常快，于是自己马上搭建了一个，打开文章页面基本上是秒开，之前hexo打开文章大约要5-6秒，用不同设备，不同网络测试很多次，hugo博客的访问速度要快4倍以上。并且文章越多，hugo的优势就越明显，为避免以后迁移麻烦，所以赶紧把博客迁到了hugo。主题也是我喜欢的，非常简洁。" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="it迷" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2020-06-01T15:55:32&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2020-06-01T15:55:32&#43;00:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="hugo" />
+
+<meta property="article:tag" content="网站" />
+
+<meta property="article:tag" content="github" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/20.html" />
+
+<meta property="og:see_also" content="/posts/4.html" />
+
+<meta property="og:see_also" content="/posts/1.html" />
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">it迷</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">关于我</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">文档</a>
+            <a href="/archive/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">归档</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            switchMode('Auto')
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">hugo搭建和使用教程</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2020-06-01</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1分钟阅读时长</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/hugo/" class="hover:text-eureka">hugo</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/%E7%BD%91%E7%AB%99/" class="hover:text-eureka">网站</a>
+        
+        
+        <span>, </span>
+        <a href="/categories/github/" class="hover:text-eureka">Github</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <h1 id="前言">前言</h1>
+<p>做博客就图个稳定，一次性买了10年的域名，搭配免费的github，适合做长期博客。<br>
+之前安装的hexo，可玩性非常强，前面文章有写一些关于hexo的安装使用教程，用了一年多，也发现了一些问题，hexo版本更新各种不兼容，访问速度慢，，很影响心情，自己都懒得搭理博客了，国内cdn加速需要备案，只是做个小站，不想太麻烦。<br>
+所幸，无意中发现荒野无灯大神把站转移到hugo，访问速度非常快，于是自己马上搭建了一个，打开文章页面基本上是秒开，之前hexo打开文章大约要5-6秒，用不同设备，不同网络测试很多次，hugo博客的访问速度要快4倍以上。并且文章越多，hugo的优势就越明显，为避免以后迁移麻烦，所以赶紧把博客迁到了hugo。主题也是我喜欢的，非常简洁。</p>
+<p>下面开始教程吧！！！</p>
+<h1 id="安装hugo">安装hugo</h1>
+<p>下载hugo <a href="https://gohugo.io">https://gohugo.io</a>
+解压到任意目录，比如D:\hugo\bin
+将Hugo添加到Windows的环境变量 PATH中<br>
+系统变量和用户变量都添加D:\hugo\bin<br>
+下载Git <a href="https://git-scm.com">https://git-scm.com</a>  并安装<br>
+下载Go语言开发环境 <a href="https://golang.org/dl">https://golang.org/dl</a>  并安装
+打开Git Bash 输入 hugo version 出现hugo static site generator相关信息表示安装完成<br>
+打开D盘 右键点击 git bash here<br>
+输入hugo new site blog</p>
+<h1 id="安装主题">安装主题</h1>
+<p>去官网下载主题  <a href="https://themes.gohugo.io">https://themes.gohugo.io</a><br>
+我下载的是even  <a href="https://themes.gohugo.io/hugo-theme-even">https://themes.gohugo.io/hugo-theme-even</a><br>
+cd /blog<br>
+git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even<br>
+安装好后 打开D:\blog\themes\even\exampleSite<br>
+找到config.toml和content 复制到D:\blog目录下<br>
+输入<br>
+hugo &ndash;theme=even &ndash;baseUrl=&ldquo;ch0769.github.io&rdquo; &ndash;buildDrafts<br>
+#even改成你的主题 ch0769.github.io也改成你的网址<br>
+出现 public 文件夹  cd /public<br>
+依次输入<br>
+git init<br>
+git add .<br>
+git commit -m &ldquo;yyyy/mm/dd-hh:mm&rdquo;<br>
+git remote add origin <a href="https://github.com/ch0769/ch0769.github.io.git">https://github.com/ch0769/ch0769.github.io.git</a><br>
+git push -u origin master</p>
+<p>cd /blog<br>
+hugo<br>
+hugo server<br>
+可以本地预览了 http://localhost:1313</p>
+<h1 id="新建文章">新建文章</h1>
+<p>hugo new post\hugo搭建和使用教程.md<br>
+会在D:\blog\content\post  hugo搭建和使用教程.md<br>
+可以下载Visual Studio Code编辑和修改文章，记得换行前要先打两个空格，再按回车键。</p>
+<h1 id="hugo使用教程">hugo使用教程</h1>
+<h2 id="添加固定链接">添加固定链接</h2>
+<p>这篇教程的加法参考如下<br>
+title: hugo搭建和使用教程<br>
+date: 2020-06-01 15:55:32<br>
+url: /hugodajian.html<br>
+（hugodajian 可以改成数字或者任意字母）</p>
+<h2 id="写文章后部署">写文章后部署</h2>
+<p>在blog目录输入hugo<br>
+在blog/public目录依次输入<br>
+git add .<br>
+git commit -m &ldquo;yyyy/mm/dd-hh:mm&rdquo;<br>
+git push -u origin master</p>
+<h2 id="netlify-自动编译部署生成-web-网站">Netlify 自动编译部署生成 Web 网站</h2>
+<p>官方首页：https://www.netlify.com</p>
+<h2 id="快速在netlify建立jekyllhexohugo静态博客">快速在Netlify建立Jekyll、Hexo、Hugo静态博客</h2>
+<p>网站首页：https://www.staticgen.com/<br>
+教程可以看这里 <a href="https://kuleyu.github.io/hexolog/post/31808.html">https://kuleyu.github.io/hexolog/post/31808.html</a></p>
+<h2 id="写文章日期格式">写文章日期格式</h2>
+<p>date: 2020-06-01 15:55:32</p>
+<h2 id="从hexo导入文章到hugo的固定链接设置">从hexo导入文章到hugo的固定链接设置</h2>
+<p>hexo设置 permalink: posts/:abbrlink.html<br>
+文章页面设置 abbrlink: 1   （每篇文章加一个数）<br>
+hugo固定链接设置<br>
+文章里面的<br>
+abbrlink: 1<br>
+改成<br>
+url: /posts/1.html<br>
+域名从hexo解析到hugo后，固定链接是不变的<br>
+也可以不用阿拉伯数字，随便输入其他字母也是可以的，这个看个人喜欢了。</p>
+<h2 id="绑定域名">绑定域名</h2>
+<p>绑域名非常简单，大家可以翻我前面的教程。<br>
+这里发现一个问题<br>
+绑定域名后<br>
+输入  git push -u origin master  出现错误如下<br>
+git上传文件出错[rejected] master -&gt; master (fetch first) error: failed to push some refs to<br>
+这个是因为github中的README.md文件不在本地代码目录中，可以通过如下命令进行代码合并<br>
+git pull &ndash;rebase origin master<br>
+再输入<br>
+git push origin master<br>
+就可以了。
+如果还是不行，可以加入强制代码</p>
+<p>git push -f origin master</p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/hugo/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#hugo</a>
+    
+    <a href="/tags/%E7%BD%91%E7%AB%99/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#网站</a>
+    
+    <a href="/tags/github/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Github</a>
+    
+</div>
+        
+        
+        
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">上一页</span>
+        <a href="/posts/23.html" class="block">n1终极玩法Armbian-5.77安装docker宝塔openwrt和HomeAssistant</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">下一页</span>
+        <a href="/posts/21.html" class="block">LG V30 韩版V300L 8.0 9.0 root刷类原生系统Havoc 10.0的详细过程</a>
+        
+    </div>
+</div>
+
+        
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">本页内容</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#添加固定链接">添加固定链接</a></li>
+    <li><a href="#写文章后部署">写文章后部署</a></li>
+    <li><a href="#netlify-自动编译部署生成-web-网站">Netlify 自动编译部署生成 Web 网站</a></li>
+    <li><a href="#快速在netlify建立jekyllhexohugo静态博客">快速在Netlify建立Jekyll、Hexo、Hugo静态博客</a></li>
+    <li><a href="#写文章日期格式">写文章日期格式</a></li>
+    <li><a href="#从hexo导入文章到hugo的固定链接设置">从hexo导入文章到hugo的固定链接设置</a></li>
+    <li><a href="#绑定域名">绑定域名</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">相关</h2>
+        <div class="content">
+            
+            <a href="/posts/20.html">k2p老毛子固件绑定域名之 cloudflare.com</a>
+            <br />
+            
+            <a href="/posts/4.html">hexo博客优化之文章置顶&#43;置顶标签</a>
+            <br />
+            
+            <a href="/posts/1.html">hexo安装后的使用教程</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

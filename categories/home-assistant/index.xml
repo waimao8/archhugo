@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home Assistant on it迷</title>
+    <link>/categories/home-assistant/</link>
+    <description>Recent content in Home Assistant on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Tue, 02 Jun 2020 15:55:32 +0000</lastBuildDate><atom:link href="/categories/home-assistant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>n1终极玩法Armbian-5.77安装docker宝塔openwrt和HomeAssistant</title>
+      <link>/posts/23.html</link>
+      <pubDate>Tue, 02 Jun 2020 15:55:32 +0000</pubDate>
+      
+      <guid>/posts/23.html</guid>
+      <description>&lt;h1 id=&#34;安装armbian-577&#34;&gt;安装Armbian-5.77&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.right.com.cn/forum/thread-510423-1-1.html&#34;&gt;https://www.right.com.cn/forum/thread-510423-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载armbian-577写入u盘&#34;&gt;下载Armbian-5.77写入U盘&lt;/h2&gt;
+&lt;h2 id=&#34;替换低负载的dtb&#34;&gt;替换低负载的dtb&lt;/h2&gt;
+&lt;p&gt;meson-gxl-s905d-phicomm-n1-xiangsm.dtb&lt;/p&gt;
+&lt;h2 id=&#34;开启bbr&#34;&gt;开启bbr&lt;/h2&gt;
+&lt;p&gt;在/etc/sysctl.conf末尾添加下面两行:&lt;br&gt;
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

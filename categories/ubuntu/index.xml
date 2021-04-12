@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on it迷</title>
+    <link>/categories/ubuntu/</link>
+    <description>Recent content in ubuntu on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Tue, 16 Feb 2021 15:30:08 +0000</lastBuildDate><atom:link href="/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>老爷机的福音lubuntu18.04</title>
+      <link>/posts/25.html</link>
+      <pubDate>Tue, 16 Feb 2021 15:30:08 +0000</pubDate>
+      
+      <guid>/posts/25.html</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;刚238入手瑞角云，系统自带win10系统稍微有点卡，看视频1080,cpu占用80～90,寻思装台linux，在lubuntu和archlinux之间纠结了很久，archlinux也玩了一段时间，各方面都挺好，就是一个缺点，时间长了不更新，容易滚挂，做服务器搭个宝塔什么的，选ubuntu会稳定些，选个最轻便的，就只能是lubuntu18.04了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ubuntu安装hugo教程</title>
+      <link>/posts/26.html</link>
+      <pubDate>Mon, 15 Feb 2021 15:55:32 +0000</pubDate>
+      
+      <guid>/posts/26.html</guid>
+      <description>&lt;h2 id=&#34;ubuntu安装hugo&#34;&gt;ubuntu安装hugo&lt;/h2&gt;
+&lt;h3 id=&#34;安装git&#34;&gt;安装git&lt;/h3&gt;
+&lt;p&gt;官网 &lt;a href=&#34;https://git-scm.com/download/linux&#34;&gt;https://git-scm.com/download/linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sudo apt-get install git&lt;/p&gt;
+&lt;h3 id=&#34;安装go&#34;&gt;安装go&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/&#34;&gt;https://golang.org/dl/&lt;/a&gt;     （有可能被墙）&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

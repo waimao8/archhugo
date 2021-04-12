@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hexo on it迷</title>
+    <link>/categories/hexo/</link>
+    <description>Recent content in hexo on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Fri, 13 Dec 2019 12:33:32 +0000</lastBuildDate><atom:link href="/categories/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图床搭建的最佳选择 PicGo &#43; Github &#43; Jsdelivr免费公用CDN加速.</title>
+      <link>/posts/12.html</link>
+      <pubDate>Fri, 13 Dec 2019 12:33:32 +0000</pubDate>
+      
+      <guid>/posts/12.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;图床搭建的最佳选择 PicGo + Github + Jsdelivr免费公用CDN加速&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;github创建仓库&#34;&gt;Github创建仓库&lt;/h1&gt;
+&lt;h2 id=&#34;点击-new-repository&#34;&gt;点击 New repository&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Github 绑定域名添加https的方法2019年9月更新</title>
+      <link>/posts/5.html</link>
+      <pubDate>Sat, 14 Sep 2019 15:40:43 +0000</pubDate>
+      
+      <guid>/posts/5.html</guid>
+      <description>&lt;p&gt;官方教程&lt;br&gt;
+&lt;a href=&#34;https://help.github.com/en/articles/using-a-custom-domain-with-github-pages&#34;&gt;https://help.github.com/en/articles/using-a-custom-domain-with-github-pages&lt;/a&gt;&lt;br&gt;
+打开 &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt;&lt;br&gt;
+打开 &lt;a href=&#34;https://github.com/waimao8/waimao8.github.io/settings&#34;&gt;https://github.com/waimao8/waimao8.github.io/settings&lt;/a&gt;&lt;br&gt;
+绑定域名：163168.xyz&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hexo博客优化之文章置顶&#43;置顶标签</title>
+      <link>/posts/4.html</link>
+      <pubDate>Thu, 12 Sep 2019 13:01:23 +0000</pubDate>
+      
+      <guid>/posts/4.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/netcan/hexo-generator-index-pin-top&#34;&gt;支持置顶的仓库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以直接用以下命令安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ npm uninstall hexo-generator-index --save
+$ npm install hexo-generator-index-pin-top --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后在需要置顶的文章的Front-matter中加上top: true即可。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hexo博客备份迁移教程</title>
+      <link>/posts/3.html</link>
+      <pubDate>Wed, 11 Sep 2019 13:01:13 +0000</pubDate>
+      
+      <guid>/posts/3.html</guid>
+      <description>&lt;h1 id=&#34;hexo备份&#34;&gt;hexo备份&lt;/h1&gt;
+&lt;h2 id=&#34;新建repository&#34;&gt;新建repository&lt;/h2&gt;
+&lt;p&gt;在Github下创建一个新的repository，取名为myblog。(与本地的Hexo源码文件夹同名即可)
+创建的时候最好为空，不要勾选创建README.md。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>github搭建hexo博客和绑定域名的详细过程</title>
+      <link>/posts/2.html</link>
+      <pubDate>Mon, 09 Sep 2019 19:21:48 +0000</pubDate>
+      
+      <guid>/posts/2.html</guid>
+      <description>&lt;h2 id=&#34;1httpsgithubcom-先注册账号-比如我的是-waimao8&#34;&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;1、https://github.com/ 先注册账号 比如我的是 waimao8&lt;/h2&gt;
+&lt;h2 id=&#34;2new-repository-waimao8githubio&#34;&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;2、New repository waimao8.github.io&lt;/h2&gt;
+&lt;h2 id=&#34;3下载git-httpsgit-scmcomdownloads-默认安装-安装好后用git---version-来查看一下版本&#34;&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;3、下载git &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;https://git-scm.com/downloads&lt;/a&gt; 默认安装 安装好后，用git &amp;ndash;version 来查看一下版本&lt;/h2&gt;
+&lt;h2 id=&#34;4下载-httpsnodejsorgendownload-选lts-默认安装-安装完后打开命令行&#34;&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;4、下载 &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;https://nodejs.org/en/download/&lt;/a&gt; 选LTS 默认安装 ，安装完后，打开命令行&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>hexo安装后的使用教程</title>
+      <link>/posts/1.html</link>
+      <pubDate>Mon, 09 Sep 2019 14:37:42 +0000</pubDate>
+      
+      <guid>/posts/1.html</guid>
+      <description>&lt;p&gt;​&lt;/p&gt;
+&lt;h1 id=&#34;安装主题next&#34;&gt;安装主题（next）&lt;/h1&gt;
+&lt;p&gt;git clone &lt;a href=&#34;https://github.com/theme-next/hexo-theme-next&#34;&gt;https://github.com/theme-next/hexo-theme-next&lt;/a&gt; themes/next&lt;/p&gt;
+&lt;p&gt;下载主题解压后放到themes目录&lt;br&gt;
+编辑主目录的_config.yml 查找language 设置 language: zh-CN&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

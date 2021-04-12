@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>电脑软件 on it迷</title>
+    <link>/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 电脑软件 on it迷</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Fri, 13 Dec 2019 19:05:32 +0000</lastBuildDate><atom:link href="/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小白电脑安装windows系统，linxu和黑苹果的相关资料</title>
+      <link>/posts/14.html</link>
+      <pubDate>Fri, 13 Dec 2019 19:05:32 +0000</pubDate>
+      
+      <guid>/posts/14.html</guid>
+      <description>&lt;p&gt;电脑安装系统必备
+操作系统下载
+官方系统&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>百度网盘不限速下载的一些方法</title>
+      <link>/posts/10.html</link>
+      <pubDate>Sun, 08 Dec 2019 23:28:33 +0000</pubDate>
+      
+      <guid>/posts/10.html</guid>
+      <description>&lt;h1 id=&#34;enfi&#34;&gt;ENFI&lt;/h1&gt;
+&lt;p&gt;下载地址 &lt;a href=&#34;http://www.enfi.cloud/&#34;&gt;http://www.enfi.cloud/&lt;/a&gt;  需要搭配enfi下载助手
+用P2P下载技术，支持HTTP，BT，磁力链等各种协议，高速下载让你摆脱限速的困扰，从此告别低速&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>chrome安装Tampermonkey，添加插件的过程</title>
+      <link>/posts/13.html</link>
+      <pubDate>Thu, 12 Sep 2019 13:01:13 +0000</pubDate>
+      
+      <guid>/posts/13.html</guid>
+      <description>&lt;p&gt;chrome安装Tampermonkey，添加插件的过程&lt;/p&gt;
+&lt;h1 id=&#34;安装谷歌访问助手&#34;&gt;安装谷歌访问助手&lt;/h1&gt;
+&lt;p&gt;打开google搜索和https://play.google.com/  的正确方式
+下载谷歌访问助手
+&lt;a href=&#34;https://github.com/haotian-wang/google-access-helper&#34;&gt;https://github.com/haotian-wang/google-access-helper&lt;/a&gt;
+解压文件后
+将谷歌访问助手_v2.3.0.crx 重命名为谷歌访问助手_v2.3.0.zip&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
